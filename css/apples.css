@@ -1,0 +1,410 @@
+body,ul,li{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+a{
+   text-decoration: none;
+}
+body{
+    position: relative;
+}
+.advertisement {
+    background: #444;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+}
+.advertisement .advertisement-text {
+    color: #a8a8aa;
+    font-size: 12px;
+    display: block;
+    line-height: 40px;
+    overflow: hidden;
+    text-align: right;
+    max-width: 976px;
+    margin: 0 auto;
+}
+.nav{
+    width: 100%;
+    min-width: 1024px;
+    height: 48px;
+    max-height: 44px;
+    background: rgba(0,0,0,0.8);
+    font-size: 16px;
+}
+.nav-content {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+}
+.nav-list {
+    margin: 0 -10px;
+    width: auto;
+    height: 44px;
+    text-align: justify;
+}
+.nav-item {
+    display: inline-block;   
+    position: relative;
+    line-height: 44px;
+}
+.nav-item a span{
+    display: block;
+    height: 20px;
+    padding: 0 55px 0 0;
+    color: #fff;
+}
+/* .imgs:nth-child(1){
+    width: 90px;
+    background-image: url("../img/apple.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 20px auto;
+}
+.imgs:nth-child(2){
+    width: 90px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 20px auto;
+}
+.imgs:nth-child(3){
+    width: 90px;
+    background-image: url("../img/buy.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 20px auto;
+} */
+./* nav-link-apple {
+    background-repeat: no-repeat;
+    background-size: 20px 44px;
+    background-position: center center;
+    width: 20px;
+}
+ */
+
+
+
+/*流动式响应开始*/
+div[class*=col]{
+    height: 200px;
+    float: left;
+}
+.promos {
+    border-bottom: 2px solid #fff;
+}
+.promos .promo-tile {
+    margin: auto;
+    width: 100%;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+  .promos .promo-tile:nth-child(1) a{
+    display: block;
+    height: 200px;
+    background-size: 736px 200px;
+     background-repeat: no-repeat;
+    background-image: url(../img/111.jpg);
+    background-position: center;   
+ } 
+ .promos .promo-tile:nth-child(2) a{
+    display: block;
+    height: 200px;
+    background-size: 736px 200px;
+     background-repeat: no-repeat;
+     background-image: url(../img/222.jpg); 
+     background-position: center;    
+ } 
+ .promos .promo-tile:nth-child(3) a{
+    display: block;
+    height: 200px;
+    background-size: 736px 200px;
+     background-repeat: no-repeat;
+     background-image: url(../img/444.jpg); 
+     background-position: center;    
+ } 
+ .promos .promo-tile:nth-child(4) a{
+    display: block;
+    height: 200px;
+    background-size: 736px 200px;
+    background-repeat: no-repeat;
+     background-image: url(../img/333.jpg); 
+    background-position: center;    
+ }  
+@media screen and (min-width: 767px) {
+    .promos{
+        width: 100%;
+    }
+    .promos .promo-tile{
+        width: 50%;
+    }
+     .promos .promo-tile:nth-child(1) a{
+        background-size: 640px 200px;
+         background-image: url(../img/11.jpg);
+         background-position: center;   
+    }
+     .promos .promo-tile:nth-child(2) a{
+        background-size: 640px 200px;
+         background-image: url(../img/22.jpg);
+          background-position: center;   
+    }
+     .promos .promo-tile:nth-child(3) a{
+        background-size: 640px 200px;
+         background-image: url(../img/44.jpg);
+        background-position: center;   
+    }
+     .promos .promo-tile:nth-child(4) a{
+        background-size: 640px 200px;
+         background-image: url(../img/33.jpg);
+         background-position: center;   
+    } 
+}
+@media screen and (min-width: 1023px) {
+    .promos{
+        width: 100%;
+    }
+    .promos .promo-tile{
+        width: 25%;
+    }
+     .promos .promo-tile:nth-child(1) a{
+        background-size: 360px 200px;
+         background-image: url(../img/1.jpg);
+        background-position: center;   
+    }
+     .promos .promo-tile:nth-child(2) a{
+        background-size: 360px 200px;
+         background-image: url(../img/2.jpg);
+         background-position: center;   
+    }
+     .promos .promo-tile:nth-child(3) a{
+        background-size: 360px 200px;
+         background-image: url(../img/4.jpg);
+         background-position: center;   
+    }
+     .promos .promo-tile:nth-child(4) a{
+        background-size: 360px 200px;
+         background-image: url(../img/3.jpg);
+        background-position: center;   
+    } 
+}
+/*流动式响应结束*/
+
+ /*banner轮播图开始*/
+
+.bannerbox{
+    width: 100%;
+    height: 540px;
+    background-position: center;
+}
+.banner{
+    width: 100%;
+    height: 540px;
+    position: relative;
+    margin: 0 auto;
+}
+.imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    font-size: 100px;
+}
+.imgbox a{
+    width: auto;
+    height: auto;
+    top: 30%; 
+    bottom: -10%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+ .imgbox a:nth-child(1){
+    background-image: url(../img/banner1.jpg);
+    background-size: auto 100%;
+}
+.imgbox a:nth-child(2){
+    background-image: url(../img/banner11.jpg);
+    background-size: 100% 100%;
+}
+.imgbox a:nth-child(3){
+    background-image: url(../img/banner111.jpg);
+    background-size: 100% 150%;
+} 
+
+.imgbox a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;
+} 
+.btn{
+    width: 220px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 5px;
+    cursor:pointer;
+}
+.btn li{
+    width: 60px;
+    height: 5px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.btn .active{
+    background:#fff;
+}
+.leftbtn,.rightbtn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 2;
+    color: #aaa;
+    margin: auto 0; 
+    font-size: 30px;
+    font-family: 'Pe-icon-7-stroke';
+}
+.leftbtn,.rightbtn{
+    position: absolute;
+    bottom:0;
+    top: 0;
+    margin: auto 0;
+    line-height: 50px;
+     background: rgba(255, 255, 255, 0.4) ;
+    cursor: pointer;
+    display: none;
+}
+.leftbtn{
+    left: 30px;
+}
+.rightbtn{
+    right: 30px;
+}
+.leftbtn:hover,.rightbtn:hover{
+    /*background: rgba(255, 255, 255, 0.4) ;*/
+}
+
+ /*banner轮播图结束*/
+
+/*底部开始*/
+footer{
+    border-top: 2px solid #fff;
+    font-size: 12px;
+    background-color: #f2f2f2;
+    color: #666;
+    min-width: 1024px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.content {
+    margin: 0 auto;
+    padding: 0 22px;
+    max-width: 980px;
+}
+.section{
+    border-bottom: 1px solid #e3e3e3;
+    color: #999;
+    padding: 16px 0 11px;
+}
+.directory{
+    line-height: 1.66667;
+    font-weight: 400;
+    letter-spacing: normal;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+.container{
+    width: 980px;
+    height: 240px;
+}
+.column{
+    width: 20%;
+    float: left;
+}
+.column h1{
+    font-size: 12px;
+    color: #333;
+}
+.column a{
+    font-size: 10px;
+    color: #666;
+}
+.column a:hover{
+    text-decoration: underline;
+}
+.footer{
+    color: #999;
+    padding: 20px 0 24px;
+}
+.footer-shop{
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.footer-shop a{
+    color: #0070c9;
+}
+.footer-shop a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+.legal div{
+    float: left;
+    margin-right: 26px;
+}
+.legal .link a{
+    color: #666;
+    border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+}
+.legal a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+.legal .locale{
+    width: 41px;
+    height: 20px;
+    float: right;
+}
+.legal .locale a span{
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/china.png");
+    padding-right: 5px;
+    background-position: left center;
+    cursor: pointer;
+    float: left;
+    margin-top: 1px;
+}
+.legal .locale a{
+    color: #666;
+}
+.bottoms{
+   margin-bottom: 20px;
+   color: #999; 
+}
+.bottoms a{
+    color: #999;
+}
+.bottoms a:hover{
+    text-decoration: underline;
+}
+/*底部结束*/
+
