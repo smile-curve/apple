@@ -1,9 +1,17 @@
+body,ul,li,h1,h2,h3,h4,h5,h6,input,form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 * {
   box-sizing: border-box;
 }
 /*小屏的时候*/
 .container {
-  width: 567px;
+  width: 735px;
   margin: auto;
 }
 .container > .row {
@@ -134,9 +142,9 @@
   display: none;
 }
 /*中屏*/
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 735px) {
   .container {
-    width: 767px;
+    width: 735px;
     margin: auto;
   }
   .container > .row > .col-m-1 {
@@ -246,9 +254,9 @@
   }
 }
 /*大屏*/
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1035px) {
   .container {
-    width: 1023px;
+    width: 1035px;
     margin: auto;
   }
   .container > .row > .col-l-1 {

@@ -1,0 +1,436 @@
+.advertisement {
+    background: #444;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+}
+.advertisement .advertisement-text {
+    color: #a8a8aa;
+    font-size: 12px;
+    display: block;
+    line-height: 40px;
+    overflow: hidden;
+    text-align: right;
+    max-width: 976px;
+    margin: 0 auto;
+}
+header{
+    width:100%;
+    background: #000;
+    height:44px;
+}
+.large{
+    margin:auto;
+    max-width: 1024px;
+    height:100%;
+}
+.large a{
+    float: left;
+    line-height:44px;
+    color: #fff;
+    padding:0 8px;
+    margin:0 30px;
+    font-size: 14px;
+}
+.small{
+    background: #000;
+}
+.small .options{
+    float: left;
+}
+.small .menu{
+    width:10%;
+    position: relative;
+}
+.small .logo{
+    width:80%;
+    text-align: center;
+}
+.small .text{
+    width:10%;
+    text-align: right;
+}
+.small a{
+    line-height:44px;
+    color: #fff;
+    padding:5px;
+}
+.small .menu .son{
+    width:100%;
+    height:500px;
+    background: #000;
+    padding-left:40px;
+    z-index: 999;
+    position: absolute;
+    top:44px;
+    display: none;
+}
+.small .menu .son a{
+    font-size: 20px;
+    line-height:25px;
+    display: block;
+    width:100%;
+    padding:10px 0;
+    border-bottom: 1px solid #333;
+}
+.small .menu .son a:last-child{
+    border-bottom: 1px solid #fff;
+}
+.large{
+    display: none;
+}
+.small{
+    display: block;
+}
+/*轮播图*/
+.wheel{
+    height: 580px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+}
+.box{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.box .list{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+.box .one{
+    background: #fff url("../img/pro_s.jpg") no-repeat ;
+    background-position: center bottom;
+    background-size: contain;
+}
+.box .two{
+    background: #000 url("../img/iphone.jpg") no-repeat ;
+    background-position: center bottom;
+    background-size: contain;
+    left: 100%;
+}
+.box .three{
+    background: #000 url("../img/kk_s.jpg") no-repeat ;
+    background-position: center bottom;
+    background-size: contain;
+    left:100%;
+}
+.leftbtn,.rightbtn{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:60px;
+    background: #ccc;
+    cursor: pointer;
+    font-size: 30px;
+}
+.leftbtn{
+    left: 20px;
+    opacity:0;
+    transition: opacity 1s linear;
+}
+.rightbtn{
+    right: 20px;
+    opacity:0;
+    transition: opacity 1s linear;
+}
+.left:hover>.leftbtn{
+    opacity:1;
+}
+.right:hover>.rightbtn{
+    opacity:1;
+}
+.left{
+    width: 20%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+.right{
+    width: 20%;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 99;
+}
+.btns{
+    width: 230px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 50px;
+    z-index: 999;
+}
+.btns .btns-list{
+    float: left;
+    width: 70px;
+    height:100%;
+    margin-right: 10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+.btns .btns-list:last-child{
+    margin-right: 0;
+}
+.btns .progress{
+    height: 100%;
+    background: #ccc;
+    width: 0;
+}
+
+.img-list div[class*=col]{
+    height: 200px;
+    border:2px solid #fff;
+    background-size: 736px 200px;
+}
+.img-list .row div:nth-child(1){
+     background: url("../img/1_s.jpg") no-repeat;
+    background-position: center;
+ }
+.img-list .row div:nth-child(2){
+    background: url("../img/2_s.jpg") no-repeat;
+    background-position: center;
+}
+.img-list .row div:nth-child(3){
+    background: url("../img/3_s.jpg") no-repeat;
+    background-position: center;
+}
+.img-list .row div:nth-child(4){
+    background: url("../img/4_s.jpg") no-repeat;
+    background-position: center;
+}
+/*底部*/
+.column_title{
+    width: 100%;
+    line-height:40px;
+    border-bottom: 1px solid #ddd;
+}
+.column_title h4:after{
+    content: '+';
+    float: right;
+    display: block;
+    clear: both;
+}
+.column_title h4 span{
+    position: absolute;
+    left:500px;
+}
+.merge_son{
+    height:auto;
+    display: none;
+    padding-left:20px;
+}
+.merge_son li{
+    line-height:30px;
+}
+.merge_son li a {
+    color: #666;
+}
+.merge{
+    display: block;
+    cursor: pointer;
+}
+.directory{
+    display: none;
+}
+@media screen and (min-width: 735px) {
+    .large{
+        display: block;
+    }
+    .small{
+        display: none;
+    }
+    .merge{
+        display: none;
+    }
+    .directory{
+        display: block;
+    }
+    .box .one{
+        background: #fff url("../img/pro_m.jpg") no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    .box .three{
+        background: #000 url("../img/kk_m.jpg") no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    .img-list div[class*=col]{
+        margin: 0 auto;
+        height: 200px;
+        border:2px solid #fff;
+        background-size: 640px 200px;
+    }
+    .img-list .row div:nth-child(1){
+        background: url("../img/1_m.jpg") no-repeat;
+        background-position: center;
+    }
+    .img-list .row div:nth-child(2){
+        background: url("../img/2_m.jpg") no-repeat;
+        background-position: center;
+    }
+    .img-list .row div:nth-child(3){
+        background: url("../img/3_m.jpg") no-repeat;
+        background-position: center;
+    }
+    .img-list .row div:nth-child(4){
+        background: url("../img/4_m.jpg") no-repeat;
+        background-position: center;
+    }
+}
+@media screen and (min-width: 1075px) {
+    .box .one{
+        background: #fff url("../img/pro_l.jpg") no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    .box .three{
+         background: #000 url("../img/kk_l.jpg") no-repeat;
+         background-size: contain;
+         background-position: center bottom;
+     }
+    .img-list div[class*=col]{
+        height: 200px;
+        border:2px solid #fff;
+        background-size: 360px 200px;
+    }
+    .img-list .row div:nth-child(1){
+        background: url("../img/1_l.jpg") no-repeat;
+        background-position: center;
+    }
+    .img-list .row div:nth-child(2){
+        background: url("../img/2_l.jpg") no-repeat;
+        background-position: center;
+    }
+    .img-list .row div:nth-child(3){
+        background: url("../img/3_l.jpg") no-repeat;
+        background-position: center;
+    }
+    .img-list .row div:nth-child(4){
+        background: url("../img/4_l.jpg") no-repeat;
+        background-position: center;
+    }
+}
+
+
+/*底部*/
+footer{
+    border-top: 2px solid #fff;
+    font-size: 12px;
+    background-color: #f2f2f2;
+    color: #666;
+    min-width: 1024px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.content {
+    margin: 0 auto;
+    padding: 0 22px;
+    max-width: 980px;
+}
+.section{
+    border-bottom: 1px solid #e3e3e3;
+    color: #999;
+    padding: 16px 0 11px;
+}
+.directory{
+    line-height: 1.66667;
+    font-weight: 400;
+    letter-spacing: normal;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+.container{
+    width: 980px;
+    height: 240px;
+}
+.column{
+    width: 20%;
+    float: left;
+}
+.column h1{
+    font-size: 12px;
+    color: #333;
+}
+.column a{
+    font-size: 10px;
+    color: #666;
+}
+.column a:hover{
+    text-decoration: underline;
+}
+.footer{
+    color: #999;
+    padding: 20px 0 24px;
+}
+.footer-shop{
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.footer-shop a{
+    color: #0070c9;
+}
+.footer-shop a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+.legal div{
+    float: left;
+    margin-right: 26px;
+}
+.legal .link a{
+    color: #666;
+    border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+}
+.legal a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+.legal .locale{
+    width: 41px;
+    height: 20px;
+    float: right;
+}
+.legal .locale a span{
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/china.png");
+    padding-right: 5px;
+    background-position: left center;
+    cursor: pointer;
+    float: left;
+    margin-top: 1px;
+}
+.legal .locale a{
+    color: #666;
+}
+.bottoms{
+    margin-bottom: 20px;
+    color: #999;
+}
+.bottoms a{
+    color: #999;
+}
+.bottoms a:hover{
+    text-decoration: underline;
+}
